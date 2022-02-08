@@ -204,7 +204,12 @@ if(isset($_POST['submit']))
 	$password=$_POST['password'];
 	$_SESSION["email2"] = $email;
 	$sql="INSERT INTO registration(id,name,username,email,password,status) VALUES('','$name','$username','$email','$password','1')";
-	$query=mysqli_query($con,$sql);
+	if($query=mysqli_query($con,$sql));
+	{
+		echo "<script>window.location.href='alreadyaccount.php'</script>";
+		//header("Location: alreadyaccount.php");
+	}
+	
 /*
 	if($query)
 	{

@@ -42,13 +42,13 @@ color: white;
 <body>
 	<table border="1" width="100%">
 		<th><font color="white"> <b> No. </b></font></th>
-		<th><font color="white"> <b> TASK </b></font></th>
-		<th><font color="white"> <b> DATE </b></font></th>
-		<th><font color="white"> <b> MESSAGE </b></font></th>
+		<th><font color="white"> <b> TASK NAME </b></font></th>
+		<th><font color="white"> <b> DATE TO BE DONE</b></font></th>
+		<th><font color="white"> <b> DESCRIPTION </b></font></th>
 		<th><font color="white"> <b> UNDO </b></font></th>
 	
 <?php
-$email=$_SESSION["email2"];
+//$email=$_SESSION["email2"];
 $sql="SELECT * FROM assignment where status=0 && email='$email'";
 $query=mysqli_query($con,$sql);
 $num=1;

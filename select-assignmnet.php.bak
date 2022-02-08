@@ -83,7 +83,7 @@ function showPage() {
 	<div style="display:none;" id="Div" class="animate">
 	<table >
 		<th> No. </th>
-		<th> TASK </th>
+		<th> TASK NAME</th>
 		<th> DATE TO BE DONE </th>
 		<th> DESCRIPTION </th>
 		<th> EDIT</th>
@@ -91,7 +91,7 @@ function showPage() {
 		<th> DONE </th>	
 <?php
 $email=$_SESSION["email2"];
-$sql="SELECT * FROM assignment where status=1 && email='$email'";
+$sql="SELECT * FROM assignment where status=1";
 $query=mysqli_query($con,$sql);
 $num=1;
 while($fetch=mysqli_fetch_array($query))

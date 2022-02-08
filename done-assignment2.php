@@ -48,10 +48,10 @@ color: white;
 		
 	
 <?php
-$email=$_SESSION["email2"];
+//$email=$_SESSION["email2"];
 //echo $email;
 //die();
-$sql="SELECT * FROM assignment where status=2 && email='$email'";
+$sql="SELECT * FROM assignment where status=2 ";
 $query=mysqli_query($con,$sql);
 $num=1;
 while($fetch=mysqli_fetch_array($query))

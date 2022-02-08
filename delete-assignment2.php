@@ -48,8 +48,8 @@ color: white;
 		<th><font color="white"> <b> UNDO </b></font></th>
 	
 <?php
-$email=$_SESSION["email2"];
-$sql="SELECT * FROM assignment where status=0 && email='$email'";
+//$email=$_SESSION["email2"];
+$sql="SELECT * FROM assignment where status=0";
 $query=mysqli_query($con,$sql);
 $num=1;
 while($fetch=mysqli_fetch_array($query))

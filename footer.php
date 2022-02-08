@@ -28,7 +28,7 @@ tr, td, th{
   <center><table >
      
     <tr>
-      <td colspan="2"><center><h2 ><b><font color="white">DEVELOPER INFORMATION</font></b></h2>
+      <td colspan="2"><center><h2 ><b><font color="white">DEVELOPED BY</font></b></h2>
       </td></tr>
 
      <tr>
@@ -36,18 +36,19 @@ tr, td, th{
      <td> 
      
      <pre><font font color="white" font size="4px">
-MISHEBA ALFRED
+  EVELYN ADHIAMBO
 
 </font></pre></center></td>
 
   <td>
     <center><br>
-    <img src="https://www.gtu.ac.in/img/tel_ico.png" width="3%"><a href="tel:+254704716989"><font font color="white"font size="4px"><b> +254704716989</b></font></a><br>
-    <img src="https://www.gtu.ac.in/img/mail.png" width="3%"><a href="mailto:mishebalfred@gmail.com"><font  font color="white" font size="4px"><b>mishebalfred@gmail.com</b></font></a></center></td>
+    <img src="https://www.gtu.ac.in/img/tel_ico.png" width="3%"><a href="tel:+254704716989"><font font color="white"font size="4px"><b> +254722579093</b></font></a><br>
+    <img src="https://www.gtu.ac.in/img/mail.png" width="3%"><a href="mailto:mishebalfred@gmail.com"><font  font color="white" font size="4px"><b>reen.adhis16@gmail.com</b></font></a></center></td>
     </tr>
   </table>
 </center>
 </div>
+ <p class="text-center">Click here to print? <a href="oop/pdf.php">Print Tasks</a> </p>
  
 </body>
 </html>

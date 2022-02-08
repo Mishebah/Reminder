@@ -90,8 +90,8 @@ function showPage() {
 		<th> DELETE </th>
 		<th> DONE </th>	
 <?php
-$email=$_SESSION["email2"];
-$sql="SELECT * FROM assignment where status=1 && email='$email'";
+//$email=$_SESSION["email2"];
+$sql="SELECT * FROM assignment where status=1";
 $query=mysqli_query($con,$sql);
 $num=1;
 while($fetch=mysqli_fetch_array($query))

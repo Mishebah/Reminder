@@ -47,8 +47,8 @@ color: white;
 		<th><font color="white"> <b> DESCRIPTION </b></font></th>
 	
 <?php
-$email=$_SESSION["email2"];
-$sql="SELECT * FROM assignment where dates>= CURDATE() && status=1 && email='$email'";
+//$email=$_SESSION["email2"];
+$sql="SELECT * FROM assignment where dates>= CURDATE() && status=1 ";
 $query=mysqli_query($con,$sql);
 $num=1;
 while($fetch=mysqli_fetch_array($query))

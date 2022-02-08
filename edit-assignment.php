@@ -52,7 +52,7 @@
 			$task=$_POST['task'];
 			$dates=$_POST['dates'];
 			$message=$_POST['message'];
-			$sql="UPDATE `assignment` SET `task`='$task',`dates`='$dates',`message`='$message' WHERE id='$id'";
+			$sql="UPDATE `assignment` SET `task`='$task',`dates`='$dates',`message`='$message', `emailstatus`= '1' WHERE id='$id'";
 			$query=mysqli_query($con,$sql);
 			if($query)
 			{

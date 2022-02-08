@@ -34,10 +34,18 @@ while($fetch=mysqli_fetch_array($query))
 		 $b=$fetch['task'];
 		 $c=$fetch['dates'];
 		 $d=$fetch['message'];
-		 $e=$fetch['email'];		 
+		 $e=$fetch['email'];
 
- $to_email = "$e";   
-
+ $to_email = "$e";  
+ 
+ $addresses = explode(',', $to_email);
+ 
+ print_r ($addresses);
+ 
+//foreach ($addresses as $address) {
+   // $email->AddAddress($address);
+//}
+//die();
 $subject = " REGARDING $b";
 
 $body = nl2br("A REMINDER TO YOU !  \n A TASK NAMED <b> $b </b> IS TO BE COMPLETED TODAY DATE  $c.");
@@ -57,10 +65,13 @@ try {
 	$mail->SMTPSecure = 'tls';							
 	$mail->Port	 = 587;
 
-	$mail->setFrom('jobsreminderschema@gmail.com', 'JobsReminder');		
-	$mail->addAddress($to_email);
+	$mail->setFrom('jobsreminderschema@gmail.com', 'JobsReminder');
+    foreach ($addresses as $address) {
+   // $email->AddAddress($address);
+//}	
+	$mail->addAddress($address);
 	$mail->addAddress('vululea@gmail.com', 'JobsReminder');
-	
+}
 	$mail->isHTML(true);								
 	$mail->Subject = $subject;
 	$mail->Body = $body;
